@@ -1,6 +1,9 @@
 public class Boss extends GameEntity{
-    public Boss(int hp, int damage, String superAbility) {
-        super(hp, damage, superAbility);
+    private Weapon weapon;
+
+    public Boss(int hp, int damage, Weapon weapon) {
+        super(hp, damage);
+        this.weapon = weapon;
     }
 
     public Weapon getWeapon() {
@@ -10,9 +13,8 @@ public class Boss extends GameEntity{
     public void setWeapon(Weapon weapon) {
         this.weapon = weapon;
     }
-
-    public Weapon weapon = new Weapon();
-    public String info(){
-        return getHp() + " " + getDamage() + getSuperAbility() + weapon.getMachine();
+    public String info () {
+        return getHp() + " " + getDamage() + " " + weapon.getWeaponType() + " " + weapon.getGun();
     }
 }
+

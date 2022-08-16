@@ -1,12 +1,10 @@
 public class GameEntity {
     private int hp;
     private int damage;
-    private String superAbility;
 
-    public GameEntity(int hp, int damage, String superAbility) {
+    public GameEntity(int hp, int damage) {
         this.hp = hp;
         this.damage = damage;
-        this.superAbility = superAbility;
     }
 
     public int getHp() {
@@ -24,12 +22,5 @@ public class GameEntity {
     public void setDamage(int damage) {
         this.damage = damage;
     }
-
-    public String getSuperAbility() {
-        return superAbility;
-    }
-
-    public void setSuperAbility(String superAbility) {
-        this.superAbility = superAbility;
-    }
 }
+

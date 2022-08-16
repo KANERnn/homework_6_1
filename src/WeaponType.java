@@ -1,3 +1,5 @@
 public enum WeaponType {
-    MACHINE, MACHINE_GUN, STEEL_ARMS;
-}
+    MACHINE, MACHINE_GUN, STEEL_ARMS
+
+    }
+

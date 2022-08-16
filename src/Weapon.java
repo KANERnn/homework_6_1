@@ -1,20 +1,25 @@
 public class Weapon {
-    private String machine;
-    private String akm;
+    private WeaponType weaponType;
+    private String gun;
 
-    public String getMachine() {
-        return machine;
+    public WeaponType getWeaponType() {
+        return weaponType;
     }
 
-    public void setMachine(String machine) {
-        this.machine = machine;
+    public void setWeaponType(WeaponType weaponType) {
+        this.weaponType = weaponType;
     }
 
-    public String getAkm() {
-        return akm;
+    public String getGun() {
+        return gun;
     }
 
-    public void setAkm(String akm) {
-        this.akm = akm;
+    public void setGun(String gun) {
+        this.gun = gun;
+    }
+
+    public Weapon(WeaponType weaponType, String gun) {
+        this.weaponType = weaponType;
+        this.gun = gun;
     }
 }
