@@ -10,8 +10,8 @@ public class Main {
         System.out.println(skeleton.info());
         WeaponType skeleton1 = WeaponType.MACHINE_GUN;
         Weapon weapon2 = new Weapon(WeaponType.MACHINE, "Лук ");
-        Skeleton12 skeleton12 = new Skeleton12(150, 10,weapon2, 15);
-        System.out.println(skeleton12.info());
+        Skeleton skeleton2 = new Skeleton(150, 10,weapon2, 15);
+        System.out.println(skeleton2.info());
 
     }
 }
